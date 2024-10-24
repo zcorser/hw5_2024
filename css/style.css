@@ -1,0 +1,51 @@
+/* Animate the logo with keyframes.  (Here is a keyframes reference.) It should start at a width of 25px and grow to 475px.  It should also start with an opacity of 0 and end with an opacity of 1. The animation should take 5 seconds and only happen when the page is loaded. **You can complete this step later in the process - it won’t affect the larger views.  */
+
+#logo {}
+@keyframes logo {
+    from {
+        width: 25px;
+        opacity: 0;
+    }
+    to {
+        width: 475px;
+        opacity: 1;
+    }
+}
+
+/* Media queries */
+@media only screen and (min-width: 900px) {
+    /* steps 10 & 11 */
+/* Style using flex according to the 1200px screenshot of the page - Links could be as far right as possible and Logo should be as far left as possible*/
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-end;
+}
+.nav_links {
+flex-direction: row;
+}
+.card {
+    flex-basis: 275px;
+}
+}
+
+/* styles to apply when the screen is 900px or more */
+@media all and (prefers-reduced-motion) {
+    /* styles to apply if a user's device settings are set to reduced motion */
+  }
+/* Create a media query when the page is printed in portrait mode */
+@media print {}
+    /* styles to apply when the page is printed in portrait mode */
+
+
+
+/* Step 7 & 8 */
+.card {
+    flex-basis: 450px;
+}
+.pricing {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
